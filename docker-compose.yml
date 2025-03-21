@@ -1,0 +1,30 @@
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "5000:5000"
+    environment:
+      - NODE_ENV=production
+      - PORT=5000
+    volumes:
+      - sqlite_data:/app/db
+    networks:
+      - app-network
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "8080:3000"
+    depends_on:
+      - backend
+    env_file:
+      - frontend/.env
+    networks:
+      - app-network
+
+volumes:
+  sqlite_data:
+
+networks:
+  app-network:
+    driver: bridge

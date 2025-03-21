@@ -1,0 +1,133 @@
+### Node.js ###
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directories
+coverage
+*.lcov
+.nyc_output
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Cache directories
+.npm
+.eslintcache
+.stylelintcache
+.cache
+.parcel-cache
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# Environment variables
+.env
+frontend/.env
+frontend/.env.docker
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+# Пример файла окружения
+!frontend/.env.example
+
+# Build directories
+build/
+dist/
+.out/
+.next/
+.nuxt/
+.output/
+.gen/
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Temporary files
+*.tmp
+*.temp
+
+# Git
+.git
+
+### Nuxt.js ###
+# Nuxt.js build / generate output
+.nuxt/
+dist/
+
+# Nuxt.js cache
+.nuxt-*
+.output/
+.gen/
+
+### Other ###
+# Optional REPL history
+.node_repl_history
+
+# Yarn Integrity file
+.yarn-integrity
+
+# Serverless directories
+.serverless/
+
+# DynamoDB Local files
+.dynamodb/
+
+# TernJS port file
+.tern-port
+
+# VSCode test versions
+.vscode-test/
+
+# FuseBox cache
+.fusebox/
+
+# Snowpack dependency directory
+web_modules/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Gatsby files
+.cache/
+# public/  # Uncomment if using Gatsby
+
+# vuepress build output
+.vuepress/dist
+
+# vuepress v2.x temp and cache directory
+.temp/
+
+# Docusaurus cache and generated files
+.docusaurus/
+
+# Docker specific
+.docker/
+.dockerignore
+.containerenv

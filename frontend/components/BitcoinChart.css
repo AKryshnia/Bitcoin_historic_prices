@@ -1,0 +1,180 @@
+.chart-container {
+  width: 90%;
+  margin: 30px auto;
+  padding: 25px;
+  background: #ffffff;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: #222;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.period-selector {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.period-selector select {
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+}
+
+.period-selector button {
+  padding: 12px 18px;
+  border: none;
+  background: #007bff;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 8px;
+}
+
+.period-selector button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.custom-period {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.custom-period label {
+  font-weight: bold;
+  color: #222;
+}
+
+.custom-period input {
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.custom-period button {
+  padding: 12px 18px;
+  background: #28a745;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.custom-period button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.chart-wrapper {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.chart-legend {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  max-width: 100%;
+  text-align: center;
+}
+
+.chart-legend h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #222;
+}
+
+.chart-legend ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style: none;
+  padding: 0;
+  max-width: 100%;
+}
+
+.chart-legend li {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #444;
+  justify-content: flex-start;
+  max-width: 100%;
+  white-space: normal;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.legend-line {
+  width: 35px;
+  height: 4px;
+  display: inline-block;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.legend-dot {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 30px;
+  flex-shrink: 0;
+}
+
+.blue {
+  background: blue;
+}
+
+.green {
+  background: #28a745;
+}
+
+.red {
+  background: #dc3545;
+}
+
+.dark {
+  background: #222;
+}
+
+.loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid blue;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
